@@ -1,0 +1,1603 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-10="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#belongsToConference -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#belongsToConference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Conference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#belongsToField -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#belongsToField">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#belongsToJournal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#belongsToJournal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Journal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasAffiliation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasAffiliation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Affiliation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasAuthor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasCoAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasCoAuthor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CoAuthor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasCountry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasCountry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasExpertise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasExpertise">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Keyword"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasExpertiseLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasExpertiseLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ExpertiseLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasKeyword -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasKeyword">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Keyword"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasLanguage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPublication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPublication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CoAuthor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPublicationType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPublicationType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#PublicationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasTopic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasType"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasAbstract -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasAbstract">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasEmail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasEmail">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasExpertiseLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasExpertiseLevel">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasFullName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasFullName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasKeyword -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasKeyword">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPhoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPhoneNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIConference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIConference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Conference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIJournal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIJournal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Journal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIKeyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIKeyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIResearchTopic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIResearchTopic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Affiliation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Affiliation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ArtificialIntelligence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ArtificialIntelligence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Field"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Beginner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Beginner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ExpertiseLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#BookChapter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#BookChapter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#BookPublication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#BookPublication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#PublicationType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Canada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Canada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CoAuthor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CoAuthor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ComputerScienceConference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ComputerScienceConference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Conference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Conference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Conference"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ConferencePaper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ConferencePaper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ConferenceProceeding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ConferenceProceeding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#PublicationType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Cybersecurity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Cybersecurity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Field"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityJournal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityJournal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Journal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityKeyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityKeyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Field"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceJournal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceJournal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Journal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceKeyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceKeyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceResearchTopic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceResearchTopic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#English -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#English">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Expert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Expert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ExpertiseLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ExpertiseLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ExpertiseLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Field -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Field"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#French -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#French">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Industry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Industry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Affiliation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Intermediate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Intermediate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ExpertiseLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Journal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Journal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#JournalArticle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#JournalArticle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#JournalPublication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#JournalPublication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#PublicationType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Keyword"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#MachineLearningKeyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#MachineLearningKeyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#MasterStudent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#MasterStudent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#NetworkingConference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#NetworkingConference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Conference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#NetworkingKeyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#NetworkingKeyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#NetworkingResearchTopic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#NetworkingResearchTopic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPublication"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#JournalArticle"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Pakistan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Pakistan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#PhDStudent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#PhDStudent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Publication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#PublicationType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#PublicationType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ResearchInstitute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ResearchInstitute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Affiliation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Topic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Topic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#UK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#UK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#USA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#USA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#University">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Affiliation"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIField -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIField">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ArtificialIntelligence"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Field"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Dr_Sher_Doudpota"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Faheem_Akhtar"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ghulam_Mujataba"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ifrah_khan"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Kamil"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Khalid_Hussain"/>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert Systems</hasKeyword>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural Language Processing</hasKeyword>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural Networks</hasKeyword>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reinforcement Learning</hasKeyword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#BeginnerLevel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#BeginnerLevel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ExpertiseLevel"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beginner</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Cryptography -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Cryptography">
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Faisal"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Shaheen"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Zakria"/>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryptography</hasKeyword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityField -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityField">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Cybersecurity"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Field"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Faisal"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ifrah_khan"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Shaheen"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Zakria"/>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryptography</hasKeyword>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intrusion Detection</hasKeyword>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Security</hasKeyword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Daniyal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Daniyal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ExpertiseLevel"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceField"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intermediate</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceField -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceField">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScience"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Field"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Daniyal"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Dhanesh"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Dr_Sher_Doudpota"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ifrah_khan"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Khalid_Hussain"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Waheed"/>
+        <hasCoAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#JohnDoe"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityField"/>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Big Data Analytics</hasKeyword>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Visualization</hasKeyword>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical Analysis</hasKeyword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Dhanesh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Dhanesh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceField"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beginner</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Dr_Sher_Doudpota -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Dr_Sher_Doudpota">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIField"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceField"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Expert_Systems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Expert_Systems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ArtificialIntelligence"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Dr_Sher_Doudpota"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Faheem_Akhtar"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ghulam_Mujataba"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ifrah_khan"/>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert Systems</hasKeyword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Expertise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Expertise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ExpertiseLevel"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Advance</hasExpertiseLevel>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beginner</hasExpertiseLevel>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intermediate</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Faheem_Akhtar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Faheem_Akhtar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIField"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Faisal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Faisal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Beginner"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIField"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intermediate</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ghulam_Mujataba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ghulam_Mujataba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CoAuthor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIField"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ifrah_khan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ifrah_khan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIField"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityField"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceField"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Intrusion_Detection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Intrusion_Detection">
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Faisal"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Shaheen"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Zakria"/>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intrusion Detection</hasKeyword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#JohnDoe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#JohnDoe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CoAuthor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityField"/>
+        <hasType rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#P1"/>
+        <hasType rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#P2"/>
+        <hasType rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#P3"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intermediate</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Kamil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Kamil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Beginner"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CoAuthor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityField"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Khalid_Hussain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Khalid_Hussain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CoAuthor"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceField"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Natural_Language_Processing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Natural_Language_Processing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ArtificialIntelligence"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Dr_Sher_Doudpota"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Faheem_Akhtar"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ghulam_Mujataba"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ifrah_khan"/>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural Language Processing</hasKeyword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Network_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Network_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Cybersecurity"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Field"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Faisal"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Shaheen"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Zakria"/>
+        <hasKeyword rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Network Security</hasKeyword>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Neural_Networks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Neural_Networks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ArtificialIntelligence"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Dr_Sher_Doudpota"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Faheem_Akhtar"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ghulam_Mujataba"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ifrah_khan"/>
+        <hasKeyword rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Neural_Networks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#P1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#P1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Field"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#P2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#P2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Field"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#P3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#P3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Field"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Reinforcement_Learning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Reinforcement_Learning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ArtificialIntelligence"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Dr_Sher_Doudpota"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Faheem_Akhtar"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ghulam_Mujataba"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Ifrah_khan"/>
+        <hasKeyword rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Reinforcement_Learning"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Shaheen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Shaheen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CoAuthor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#ExpertiseLevel"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Waheed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Waheed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceField"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beginner</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Zakria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Zakria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Author"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#FirstAuthor"/>
+        <hasPublication rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityField"/>
+        <hasExpertiseLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert</hasExpertiseLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/k">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mkami/ontologies/2023/11/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPublication"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasKeyword"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIKeyword"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasExpertise"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIField"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPublication"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasKeyword"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIKeyword"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasExpertise"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIField"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rr</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPublication"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasKeyword"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityKeyword"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasExpertise"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityField"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPublication"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasKeyword"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityKeyword"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasExpertise"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityField"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Conference"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasKeyword"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIKeyword"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#belongsToField"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/c"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#AIField"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPublication"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasKeyword"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityKeyword"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasExpertise"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#CybersecurityField"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPublication"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasKeyword"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceKeyword"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasExpertise"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceField"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rule6</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#Researcher"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasPublication"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasKeyword"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/p"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceKeyword"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/k"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#hasExpertise"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#DataScienceField"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

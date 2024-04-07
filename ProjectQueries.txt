@@ -1,0 +1,151 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX myOnt: <http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#>
+SELECT ?author
+WHERE {
+ ?author rdf:type myOnt:Field .
+ myOnt:JohnDoe myOnt:hasType ?author .
+}
+///////////////
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX myOnt: <http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#>
+SELECT ?author
+WHERE {
+ ?author rdf:type myOnt:FirstAuthor .
+ myOnt:AIField myOnt:hasAuthor ?author .
+}
+//////
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX myOnt: <http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#>
+SELECT ?author
+WHERE {
+ ?author rdf:type myOnt:FirstAuthor .
+ myOnt:DataScienceField myOnt:hasAuthor ?author .
+}
+
+/////
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX myOnt: <http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#>
+SELECT ?author
+WHERE {
+ ?author rdf:type myOnt:CoAuthor .
+ myOnt:AIField myOnt:hasAuthor ?author .
+}
+/////
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX myOnt: <http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#>
+SELECT ?author
+WHERE {
+ ?author rdf:type myOnt:FirstAuthor .
+ myOnt:Neural_Networks myOnt:hasAuthor ?author .
+}
+/////
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX myOnt: <http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#>
+SELECT ?author
+WHERE {
+ ?author rdf:type myOnt:FirstAuthor .
+ myOnt:CybersecurityField myOnt:hasAuthor ?author .
+}
+///
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX myOnt: <http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#>
+SELECT ?author
+WHERE {
+  ?field rdf:type myOnt:Field.
+  ?field myOnt:hasKeyword "Intrusion Detection"^^xsd:string.
+  ?field myOnt:hasAuthor ?author.
+}
+////
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX myOnt: <http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#>
+SELECT ?author
+WHERE {
+  ?field rdf:type myOnt:Field.
+  ?field myOnt:hasKeyword "Big Data Analytics"^^xsd:string.
+  ?field myOnt:hasAuthor ?author.
+}
+/////
+//rough
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX onto: <http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#>
+SELECT ?expertiseIndividual
+WHERE {
+  ?expertiseIndividual rdf:type onto:ExpertiseLevel.
+}
+
+///////////////////////
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX myont: <http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#>
+SELECT ?author ?expertiseLevel
+WHERE {
+  ?author rdf:type myont:Author.
+  ?author myont:hasExpertiseLevel ?expertiseLevel.
+}
+///
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX myont: <http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#>
+SELECT ?author (COUNT(?publication) AS ?publicationCount)
+WHERE {
+  ?author rdf:type myont:Author.
+  OPTIONAL { ?author myont:hasPublication ?publication. }
+}
+GROUP BY ?author
+
+//////
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX myont: <http://www.semanticweb.org/mkami/ontologies/2023/11/untitled-ontology-10#>
+SELECT ?author (COUNT(?publication) AS ?publicationCount)
+WHERE {
+  ?author rdf:type myont:Author.
+  OPTIONAL { ?author myont:hasPublication ?publication. }
+}
+GROUP BY ?author
+HAVING (COUNT(?publication)>1)
+////
+SELECT ?author ?field ?expertise
+WHERE {
+  ?field rdf:type myOnt:Field.
+  ?field myOnt:hasKeyword "Big Data Analytics"^^xsd:string.
+  ?field myOnt:hasAuthor ?author.
+  ?author myOnt:hasExpertiseLevel ?expertise.
+}
+/////
+
+
