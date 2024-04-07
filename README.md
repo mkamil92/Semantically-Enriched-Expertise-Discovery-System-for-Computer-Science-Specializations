@@ -1,0 +1,2 @@
+This project aims to develop an ontology-based system for expert discovery in the field of computer science. The system utilizes an ontology to semantically represent academic information, including research publications, and employs etc. 
+This ontology help find expert in the field of computer science. Rules will be generated using Semantic web rule language (SWRL) in order to infer individual's expertise in the field of computer science. Further, for search an expert in particular field, I used query in semantic with the help of SPARQL
